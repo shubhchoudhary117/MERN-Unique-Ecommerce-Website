@@ -1,0 +1,570 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.placeorderHeader{
+    width: 100%;
+    padding: 12px 28px;
+    border: 1px solid rgb(223, 223, 223);
+    position: fixed;
+    top: 0px;
+   
+}
+.placeorderHeader h3{
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    text-transform: lowercase;
+}
+.placeorderHeader h3 span{
+    color: #0b9d8a;
+    text-transform: capitalize;
+}
+
+/* header Responsive Media query ------------------------------------------- */
+@media(max-width:768px){
+    .placeorderHeader h3{
+        font-size: 1.5rem;
+    }
+}
+/* endo of header styling --------------------------------------------------  */
+
+main{
+    width: 100%;
+}
+main .PlaceOrderSection{
+    width: 100%;
+    margin-top: 80px;
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart{
+    width: 560px;
+    padding: 10px;
+   
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .heading{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    text-transform: capitalize;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox{
+    width: 550px;
+    margin-top: 20px;
+    border: 1px solid rgb(240, 240, 240);
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .header{
+    width: 100%;
+    height: 40px;
+    background: rgb(249, 249, 249);
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .header p{
+    display: flex;align-items: center;
+    font-size:1rem;
+    font-weight: 500;
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .header p img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart{
+    width: 550px;
+    padding: 20px 20px 0px 20px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody{
+    width: 60%;
+    display: flex;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody .ItemImage{
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(223, 223, 223);
+    position: relative;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .logoImage{
+    width: 25px;
+    height: 25px;
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .logoImage img{
+    width: 100%;
+    height: 100%;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody .ItemImage img{
+    width: 100%;
+    height: 100%;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .ItemDetails .ProductName{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .ItemDetails{
+    margin-left: 20px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .ItemDetails .size{
+    font-style: 0.9rem;
+    margin-top: 3px;
+    color: rgb(51, 51, 51);
+    text-transform: capitalize;
+    padding-top: 3px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .ItemDetails .price {
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    padding-top: 5px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .ItemDetails .price i{
+    font-size: 0.8rem;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody .ItemDetails  .RemoveOption{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    color: #0b9d8a;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .cartBody  .ItemDetails .RemoveOption i{
+    font-size: 1rem;
+    margin-right: 3px;
+   
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .ProductSuplier{
+    width: 100%;
+    border-top: 1px solid rgb(223, 223, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .ProductSuplier h5{
+    font-size:1rem;
+    color: gray;
+    font-weight: 200;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart  .ProductSuplier .Supliername{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .productDetail .productBox .detailCart .ProductSuplier .Supliername span{
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-weight: 500;
+    color: gray;
+}
+/* end of product detail box ___________________________ -----------------------------------------------*/
+/* start the dilavery address box --------------------------------------------------------------------- */
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress{
+    width: 550px;
+    margin-top: 20px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .heading{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    text-transform: capitalize;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgb(240, 240, 240);
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart .header{
+    display: flex;
+    justify-content: space-between;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart .header .right{
+    color: #0b9d8a;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart .addressDetail{
+    margin-top: 10px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart .addressDetail .location{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart .addressDetail .state{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart .dilaveryAddress .Addresscart .addressDetail  .mobile{
+    color: rgb(51, 51, 51);
+}
+/* ----------------------- end of Address Box Styling -------------------------------------- */
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod {
+    width: 550px;
+    margin-top: 20px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .PaymentBox{
+    width: 550px;
+    padding: 10px;
+   
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .heading{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery{
+    padding: 20px 28px;
+    border-radius: 4px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: hsl(162, 60%, 89%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery .logo {
+    display: flex;
+    align-items: center;
+
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery .logo h3{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: rgb(51, 51, 51);
+    margin-top: 5px;
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery  .logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    margin-right: 20px;
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery .text{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart
+  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery .mark .uil-check{
+    width: 20px;
+    height: 20px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    clip-path: circle();
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .OrderDetailPart
+  .paymentMethod .PaymentBox .paymentMode .CashOnDilavery .mark .uil-circle{
+    width: 23px;
+    height: 23px;
+ 
+    color: #0b9d8a;
+    clip-path: circle();
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* start the product price detail box----------------------------------- */
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox{
+    width: 400px;
+    padding: 20px;
+    border-left: 1px solid rgb(223, 223, 223);
+    border-right:  1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    position: fixed;
+    right: 15%;
+    top: 22%;
+
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail {
+    width: 100%;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: #0b9d8a;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 223, 223);
+   
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice h5{
+    text-transform: capitalize;
+    padding: 12px 0px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 450;
+    color: rgb(51, 51, 51);
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice  strong{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .orderTotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .orderTotal .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+ 
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox   .orderTotal  strong{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+/* end of total order box -------------------------- */
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox  .ProductPriceBox  .buttonBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .buttonBox button{
+    width: 90%;
+    height: 50px;
+    background-color: #0b9d8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    
+}
+
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+   
+ 
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox .saftycontent {
+    width: 60%;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox .saftycontent  h3{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0b9d8a;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox .saftycontent p{
+    font-size: 0.8rem;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+ 
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage img{
+    width: 100%;
+    height: 100%;object-fit: fill;
+}
+/* end of price detail box */
+
+
+/* Product Price Detail box Responsive Media Query ---------------------------------------------------------- */
+
+@media(max-width:768px){
+
+
+    main{
+        width: 100%;
+    }
+    main .PlaceOrderSection{
+        width: 100%;
+        margin-top: 20px;
+    }
+    main .PlaceOrderSection .PlaceOrderContainer{
+        width: 100%;
+        margin: auto;
+    }
+
+/* start the product price detail box----------------------------------- */
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox{
+    width: 100%;
+    padding: 20px;
+    border-left: 1px solid rgb(223, 223, 223);
+    border-right:  1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin: auto;
+    margin-top: 30px;
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail {
+    width: 100%;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: #0b9d8a;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 223, 223);
+   
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice h5{
+    text-transform: capitalize;
+    padding: 12px 0px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 450;
+    color: rgb(51, 51, 51);
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice  strong{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .orderTotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .orderTotal .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+ 
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox   .orderTotal  strong{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+/* end of total order box -------------------------- */
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox  .ProductPriceBox  .buttonBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .buttonBox button{
+    width: 90%;
+    height: 40px;
+    background-color: #0b9d8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox  .buttonBox button #link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+   
+ 
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox .saftycontent {
+    width: 60%;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox .saftycontent  h3{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0b9d8a;
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox .saftycontent .text{
+    font-size: 0.4rem;
+    
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+ 
+}
+main .PlaceOrderSection .PlaceOrderContainer .OrderBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage img{
+    width: 100%;
+    height: 100%;object-fit: fill;
+}
+/* end of price detail box */
+
+
+
+
+}
+/* End of Price Detail Box Responsive Media Query ----------------------------------------------------------- */

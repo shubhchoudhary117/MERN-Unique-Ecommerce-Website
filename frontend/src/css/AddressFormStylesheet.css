@@ -1,0 +1,320 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.AddressPageHeader{
+    width: 100%;
+    padding: 12px 28px;
+    border: 1px solid rgb(223, 223, 223);
+   
+}
+.AddressPageHeader h3{
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    text-transform: lowercase;
+}
+.AddressPageHeader h3 span{
+    color: #0b9d8a;
+    text-transform: capitalize;
+}
+
+/* header Responsive Media query ------------------------------------------- */
+@media(max-width:768px){
+    .AddressPageHeader h3{
+        font-size: 1.5rem;
+    }
+}
+/* endo of header styling --------------------------------------------------  */
+
+
+main{
+    width: 100%;
+}
+main .AddressSection{
+    width: 100%;
+    margin-top: 30px;
+}
+main .AddressSection .FormContainer{
+    width: 80%;
+    margin: auto;
+}
+
+main .AddressSection .FormContainer .form{
+    width: 60%;
+    border:  1px solid rgb(223, 223, 223);
+    border-top: 0px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+main .AddressSection .FormContainer .form .contactDetail{
+    padding: 10px;
+}
+main .AddressSection .FormContainer .form .contactDetail a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+}
+main .AddressSection .FormContainer .form .contactDetail a i{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group{
+    width: 100%;
+    margin-top: 20px;
+   
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group .input-field{
+    width: 100%;
+    height: 50px;
+    position: relative;
+   
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group  p{
+   font-size: 12px;
+   color: rgb(225, 25, 0);
+   font-weight: 500;
+   letter-spacing: 1px;
+   line-height: 16px;
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group .input-field input{
+    width: 100%;
+    height: 70%;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    font-size: 0.8rem;
+    margin-top: 15px;
+    padding: 0px;
+    
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group .input-field input:focus {
+    border-bottom: 1px solid #0b9d8a;
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group .input-field  label{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    color: #0b9d8a;
+    font-weight: 500;
+}
+main .AddressSection .FormContainer .form .contactDetail .form-group .input-field input:focus ~ label,
+main .AddressSection .FormContainer .form .contactDetail .form-group .input-field input:valid ~ label{
+   transform: translateY(-20px);
+}
+/* end of contact detail box ----------------------------------------------------------------------- */
+
+main .AddressSection .FormContainer .form .addressDetail{
+    padding: 10px;
+}
+main .AddressSection .FormContainer .form .addressDetail a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+}
+main .AddressSection .FormContainer .form .addressDetail a i{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+main .AddressSection .FormContainer .form .addressDetail .form-group{
+    width: 100%;
+    margin-top: 20px;
+   
+}
+main .AddressSection .FormContainer .form .addressDetail .form-group  p{
+    font-size: 12px;
+    color: rgb(225, 25, 0);
+    font-weight: 500;
+    letter-spacing: 1px;
+ }
+main .AddressSection .FormContainer .form .addressDetail .form-group .input-field{
+    width: 100%;
+    height: 50px;
+    position: relative;
+   
+}
+main .AddressSection .FormContainer .form .addressDetail .form-group .input-field input{
+    width: 100%;
+    height: 70%;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    font-size: 0.8rem;
+    margin-top: 15px;
+    padding: 0px;
+    
+}
+main .AddressSection .FormContainer .form .addressDetail .form-group .input-field input:focus {
+    border-bottom: 1px solid #0b9d8a;
+}
+main .AddressSection .FormContainer .form .addressDetail .form-group .input-field  label{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    color: #0b9d8a;
+    font-weight: 500;
+}
+main .AddressSection .FormContainer .form .addressDetail .form-group .input-field input:focus ~ label,
+main .AddressSection .FormContainer .form .addressDetail .form-group .input-field input:valid ~ label{
+   transform: translateY(-20px);
+}
+/* ------------------------------------------------------------------------------- */
+main .AddressSection .FormContainer .form .addressDetail .citystate{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+   
+}
+main .AddressSection .FormContainer .form .addressDetail .citystate .form-group{
+    width: 100%;
+
+}
+main .AddressSection .FormContainer .form .addressDetail .citystate .form-group p{
+
+}
+main .AddressSection .FormContainer .form .addressDetail  .citystate  .form-group .input-field{
+    width: 90%;
+    height: 50px;
+    position: relative;
+   
+}
+main .AddressSection .FormContainer .form .addressDetail .citystate  .form-group .input-field input{
+    width: 100%;
+    height: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    font-size: 0.8rem;
+    margin-top: 15px;
+    padding: 0px;
+    
+    
+}
+
+main .AddressSection .FormContainer .form .addressDetail  .citystate  .form-group .input-field input:focus {
+    border-bottom: 1px solid #0b9d8a;
+}
+main .AddressSection .FormContainer .form .addressDetail .citystate  .form-group .input-field  label{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    color: #0b9d8a;
+    font-weight: 500;
+}
+main .AddressSection .FormContainer .form .addressDetail .citystate  .form-group .input-field input:focus ~ label,
+main .AddressSection .FormContainer .form .addressDetail .citystate  .form-group .input-field input:valid ~ label{
+   transform: translateY(-20px);
+}
+/* end of address detail fields ---------------------------- */
+
+
+main .AddressSection .FormContainer .form .button{
+    width: 80%;
+    margin: auto;
+    margin: auto;
+    padding: 20px;
+}
+main .AddressSection .FormContainer .form .button button{
+    width: 80%;
+    height: 45px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin: auto;
+
+}
+main .AddressSection .FormContainer .form .button button .link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* responsive button media query ---------------------- */
+
+@media(max-width:768px){
+
+main .AddressSection .FormContainer .form .button{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+main .AddressSection .FormContainer .form .button button{
+    width: 90%;
+    height: 45px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin: auto;
+
+}
+}
+
+@media(min-width:769px){
+
+    main .AddressSection .FormContainer .form .button{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    main .AddressSection .FormContainer .form .button button{
+        width: 90%;
+        height: 45px;
+        background-color: #0b9d8a;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        font-size: 1rem;
+        margin-left: 30px;
+        cursor: pointer;
+    
+    }
+    }
+
+/* end of responsive button media query -------------- */
+
+/* Responsive code media query ------------------ -------------------------------- */
+@media(max-width:768px){
+main{
+    width: 100%;
+}
+main .AddressSection{
+    width: 100%;
+    margin-top: 30px;
+}
+main .AddressSection .FormContainer{
+    width: 100%;
+    margin: auto;
+}
+
+main .AddressSection .FormContainer .form{
+    width: 90%;
+    border:  1px solid rgb(223, 223, 223);
+    border-top: 0px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+main .AddressSection .FormContainer .form .contactDetail{
+    padding: 10px;
+}
+main .AddressSection .FormContainer .form .contactDetail a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+}
+}
+/* end of fields responsive code ------------------------------------------- */
+
+/* for laptop and pc devices media query responsive */

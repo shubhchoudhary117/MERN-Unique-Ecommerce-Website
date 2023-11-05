@@ -1,0 +1,1329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.ProductPageBody {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+
+}
+
+.ProductPageHeader {
+    width: 100%;
+}
+
+.ProductPageHeader .ProductpageNavigation {
+
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.ProductPageHeader .ProductpageNavigation .ProductPagelogo {
+    font-size: 1.8rem;
+}
+
+.ProductPageHeader .ProductpageNavigation .ProductPagelogo span {
+    color: #0b9d8a;
+}
+
+.ProductPageHeader .ProductpageNavigation .AddProductIcon i {
+    text-decoration: none;
+    font-size: 30px;
+    color: #0b9d8a;
+    font-weight: 600;
+}
+
+/* end of navigation part */
+.ProductPageHeader .ProductPageLinks {
+    width: 100%;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.ProductPageHeader .ProductPageLinks ul {
+    display: flex;
+    list-style: none;
+}
+
+.ProductPageHeader .ProductPageLinks ul li {
+    padding: 12px 28px;
+    cursor: pointer;
+}
+
+.ProductPageHeader .ProductPageLinks ul li #Productlink {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.ProductPageHeader .ProductPageLinks ul li:hover #Productlink {
+    border-bottom: 2px solid #0b9d8a;
+    margin-top: 2px;
+}
+
+/* Responsive Navigation bar Media Query */
+
+@media(max-width:768px) {
+    .ProductPageHeader {
+        width: 100%;
+        padding-top: 0px;
+       
+    }
+
+    .ProductPageHeader .ProductpageNavigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .ProductPageHeader .ProductpageNavigation .ProductPagelogo {
+        font-size: 1.1rem;
+    }
+
+    .ProductPageHeader .ProductpageNavigation .AddProductIcon i {
+        text-decoration: none;
+        font-size: 23px;
+        color: #0b9d8a;
+        font-weight: 600;
+    }
+
+    /* end of navigation part */
+    .ProductPageHeader .ProductPageLinks {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+        flex-wrap: wrap;
+        border: 1px solid rgb(240, 240, 240);
+    }
+
+    .ProductPageHeader .ProductPageLinks ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .ProductPageHeader .ProductPageLinks ul li {
+        padding: 6px 10px;
+        cursor: pointer;
+    }
+
+    .ProductPageHeader .ProductPageLinks ul li #Productlink {
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.692);
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    .ProductPageHeader .ProductPageLinks ul li:hover #Productlink {
+        border-bottom: 2px solid #0b9d8a;
+        margin-top: 2px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .ProductPageLinks {
+        width: 110%;
+    }
+
+    .ProductPageHeader .ProductPageLinks ul {
+        display: flex;
+    }
+
+    .ProductPageHeader .ProductPageLinks ul li {
+        padding: 0px;
+        margin-left: 10px;
+    }
+}
+
+/* end of Header Navigatin Responsive Media query designe  */
+/* ------------------------------------------------------------- */
+
+.ProductPagemain {
+    width: 100vw;
+}
+
+.ProductPagemain .ProductContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ProductPagemain .ProductContainer .choosedProduct {
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgb(240, 240, 240);
+
+}
+
+.ProductPagemain .ProductContainer .choosedProduct .productImage {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.ProductPagemain .ProductContainer .choosedProduct .productImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart {
+    width: 60%;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox {
+    width: 100%;
+    border: 1px solid rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+}
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox  #LogonotuplodError{
+    font-size: 1rem;
+    color: #e11900;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox  #LogonotuplodError i{
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .option {
+    display: flex;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .option button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #0b9d8a;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .option button i {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox {
+    width: 100%;
+
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imageuploadContainer {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imageuploadContainer .removeLogo {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imageuploadContainer .removeLogo i {
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: red;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox .uploadedImage {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox .uploadedImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox #fileopenLogo {
+    display: none;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox i {
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .TextBox {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .TextBox p {
+    width: 80%;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting {
+    margin-left: 30px;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .text-input input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgb(240, 240, 240);
+    outline: none;
+    text-align: center;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .text-input input::placeholder {
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    font-weight: 300;
+    color: gray;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .text-input h3,
+.color-input h3 {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .color-input {
+    margin-top: 30px;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .instruction {
+    margin-top: 10px;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .instruction input {
+    width: 10px;
+    height: 10px;
+}
+
+.ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .instruction label {
+    font-size: 0.7rem;
+    margin: 5px;
+    color: gray;
+}
+
+/* Responsive Product part */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media(max-width:768px) {
+
+    .ProductPagemain .ProductContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ProductPagemain .ProductContainer .choosedProduct {
+        width: 90%;
+        border: 1px solid rgb(240, 240, 240);
+
+    }
+
+    .ProductPagemain .ProductContainer .choosedProduct .productImage {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .ProductPagemain .ProductContainer .choosedProduct .productImage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox {
+        width: 100%;
+        border: 1px solid rgb(240, 240, 240);
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .title {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: gray;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .option {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .option button {
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: #0b9d8a;
+        margin: 5px;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+   
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .option button i {
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox {
+        width: 100%;
+
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox {
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgb(240, 240, 240);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .imgBox i {
+        font-size: 1.5rem;
+        color: gray;
+        cursor: pointer;
+    }
+
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .TextBox {
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgb(240, 240, 240);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting {
+        margin-top: 20px;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .text-input input {
+        width: 100%;
+        height: 35px;
+        border: 1px solid rgb(240, 240, 240);
+        outline: none;
+        text-align: center;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .text-input input::placeholder {
+        font-size: 0.8rem;
+        text-transform: lowercase;
+
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .text-input h3,
+    .color-input h3 {
+        font-size: 0.8rem;
+        color: gray;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    .ProductPagemain .ProductContainer .logoPrintingPart .LogoPrintingOptiondBox .Logouploadbox .TextlogoOuterBox .Textediting .color-input {
+        margin-top: 30px;
+    }
+
+
+
+}
+
+/* end of responsive product part  */
+
+.imagetypeselectSection {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.imagetypeselectSection .backendfrontendContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.imagetypeselectSection .backendfrontendContainer .content {
+    padding: 0px 12px;
+}
+
+.imagetypeselectSection .backendfrontendContainer .content h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #0b9d8a;
+}
+
+.imagetypeselectSection .backendfrontendContainer .content small {
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
+.imagetypeselectSection .ImageBackendBody {
+    width: 500px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.imagetypeselectSection.ImageBackendBody p {
+    font-size: 0.8rem;
+    padding: 10px 10px;
+}
+
+.imagetypeselectSection .ImageBackendBody .ImageBackendBox {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.imagetypeselectSection .ImageBackendBody .ImageBackendBox strong {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.imagetypeselectSection .ImageBackendBody .ImageBackendBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+/* -----------------------------Responsive code ------------------------------------------------------------- */
+@media(max-width:768px) {
+
+    .imagetypeselectSection .backendfrontendContainer {
+        width: 80%;
+        margin: auto;
+    }
+
+    .imagetypeselectSection .backendfrontendContainer .content {
+        padding: 0px 12px;
+    }
+
+    .imagetypeselectSection .backendfrontendContainer .content h3 {
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        color: #0b9d8a;
+    }
+
+    .imagetypeselectSection .backendfrontendContainer .content small {
+        font-weight: 400;
+        font-size: 0.6rem;
+    }
+
+    .imagetypeselectSection .ImageBackendBody {
+        width: 500px;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .imagetypeselectSection .ImageBackendBody .ImageBackendBox {
+        width: 70px;
+        height: 70px;
+        border: 1px solid rgb(240, 240, 240);
+        margin-top: 10px;
+        margin-left: 20px;
+        text-align: center;
+
+
+    }
+
+    .imagetypeselectSection .ImageBackendBody .ImageBackendBox strong {
+        font-size: 0.6rem;
+        color: gray;
+
+    }
+
+    .imagetypeselectSection .ImageBackendBody .ImageBackendBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+}
+/* end of responsive code ----------------------------------------------------------------- */
+
+
+/* end of orignal product and logo operation section  */
+/* start the created images section and buying and add to cart facility section css  */
+
+.CreatedImagesection {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.CreatedImagesection .content {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.CreatedImagesection .content h3 {
+    font-size: 1.5rem;
+    color: #0b9d8a;
+    text-transform: capitalize;
+}
+
+.CreatedImagesection .title {
+    font-size: 1.8rem;
+    color: gray;
+    margin-left: 80px;
+}
+
+.CreatedImagesection .FinalImageContainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer {
+    flex-wrap: wrap;
+    padding: 10px;
+    display: block;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .ImageBackendBody {
+    width: 100%;
+    border: 1px solid rgb(240, 240, 240);
+    display: flex;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .ImageBackendBody p {
+    font-size: 0.8rem;
+    padding: 10px 10px;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .ImageBackendBody .ImageBackendBox {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .ImageBackendBody .ImageBackendBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody {
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    position: relative;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage .LOGOBOX {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage .LOGOBOX img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background: transparent;
+}
+
+
+
+/* Complete Product section responsiv code ----------------------------------------------- */
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+   
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button{
+    width: 160px;
+    height: 45px;
+    border: 1px solid #0b9d8a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   text-decoration: none;
+   background: transparent;
+   border:  1px solid #0b9d8a;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 3px;
+   margin-right: 5px;
+   
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button:hover{
+   background-color: #0b9d8a;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button:hover #link{
+    color: #FFFFFF;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button:hover #link i{
+    color: #FFFFFF;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .addcard #link i{
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .addcard #link {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .buynow #link{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .buynow #link i{
+    font-size: 1.5rem;
+    margin-right: 5px;
+   
+   
+}
+
+
+@media(max-width:768px) {
+    .CreatedImagesection {
+        margin-top: 40px;
+    }
+
+    .CreatedImagesection .title {
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: #0b9d8a;
+
+    }
+
+    .CreatedImagesection .FinalImageContainer {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    .CreatedImagesection .FinalImageContainer .LogoApplayImageContainer {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+    }
+
+
+    .CreatedImagesection .FinalImageContainer  .LogoApplayImageOuterBody {
+        width: 100%;
+        border: 1px solid rgb(240, 240, 240);
+    }
+
+    .CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        margin: auto;
+    }
+
+    .CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage .LOGOBOX {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    .CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage .LOGOBOX img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        background: transparent;
+    }
+
+    .CreatedImagesection .FinalImageContainer .LogoApplayImageOuterBody .LogoApplayImage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+/* Complete Product section responsiv code ----------------------------------------------- */
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+ 
+   
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #0b9d8a;
+    margin-left: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   text-decoration: none;
+   background: transparent;
+   border:  1px solid #0b9d8a;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button:hover{
+   background-color: #0b9d8a;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button:hover #link{
+    color: #FFFFFF;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons button:hover #link i{
+    color: #FFFFFF;
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .addcard #link i{
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .addcard #link {
+    font-size: 0.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .buynow #link{
+    font-size: 0.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.CreatedImagesection .FinalImageContainer .LogoApplayImageContainer .BuynowAddCartButtons .buynow #link i{
+    font-size: 0.8rem;
+    margin-right: 10px;
+    padding-top: 10px;
+   
+}
+
+}
+/* end of Completed product with log image section Responsive code ----------------------------------------------------- */
+
+/* start the product detail section ------------------------------------------------------- */
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection {
+    width: 60%;
+    padding: 10px;
+}
+
+
+/* PRODUCT  PRICE BOX STYLING ------------------------------------------------------------------------------ */
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox {
+    width: 90%;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .title {
+    font-size: 1.3rem;
+    line-height: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+    color: rgb(51, 51, 51);
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .price i {
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .price {
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .rating {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .rating i {
+    margin-left: 5px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .rating {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 4px 8px;
+    background: rgb(35, 187, 117);
+    fill: rgb(255, 255, 255);
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .dilavery {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: rgb(249 249 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* END OF PRODUCT  PRICE BOX STYLING ------------------------------------------------------------------------------ */
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox{
+    width: 90%;
+    padding: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px; 
+    border-radius: 8px;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox .title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+    color: rgb(51, 51, 51);
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox .sizeList{
+    display: flex;
+    list-style: none;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox .sizeList li{
+    padding: 12px 25px;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox li label{
+    display: block;
+    width: 50px;
+    height: 35px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox li  .active{
+    border: 1px solid #0b9d8a;
+    background-color: #FFFFFF;
+    color: #0b9d8a;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox li input{
+    display: none;
+    
+}
+/* End oF Product Size Box------------------------------------------------------------------------- */
+.CreatedImagesection .FinalImageContainer .ProductDetailBox{
+
+    width: 90%;
+    padding: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.CreatedImagesection .FinalImageContainer .ProductDetailBox .title{
+    margin: 0px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+  
+}
+.CreatedImagesection .FinalImageContainer .ProductDetailBox  p{
+    font-size: 0.8rem;
+    padding: 2px 3px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox{
+    width: 90%;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px;
+    background: rgb(231, 238, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility{
+    display: flex;
+    align-items: center;
+    width: 120px;
+   
+    
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility:nth-child(1){
+    border-right: 2px solid #ffffff;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility:nth-child(2){
+    border-right: 2px solid #ffffff;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility i{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    clip-path: circle();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b9d8a;
+    font-weight: lighter;
+   
+    
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility p{
+    font-size: 0.8rem;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+/* end of product releted information part */
+/* media query for product detail section  */
+
+@media(max-width:768px){
+
+
+/* start the product detail section ------------------------------------------------------- */
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection {
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* PRODUCT  PRICE BOX STYLING ------------------------------------------------------------------------------ */
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox {
+    width: 100%;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .title {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+    color: rgb(51, 51, 51);
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .price i {
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .price {
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .rating {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .rating i {
+    margin-left: 5px;
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .rating {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 3px 6px;
+    background: rgb(35, 187, 117);
+    fill: rgb(255, 255, 255);
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductPriceBox .dilavery {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: rgb(249 249 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* END OF PRODUCT  PRICE BOX STYLING ------------------------------------------------------------------------------ */
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px; 
+    border-radius: 8px;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox .title{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+    color: rgb(51, 51, 51);
+}
+
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox .sizeList{
+    display: flex;
+    list-style: none;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox .sizeList li{
+    padding: 10px 10px;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox li label{
+    display: block;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox li  .active{
+    border: 1px solid #0b9d8a;
+    background-color: #FFFFFF;
+    color: #0b9d8a;
+}
+.CreatedImagesection .FinalImageContainer .productDetailsSection .ProductSizeBox li input{
+    display: none;
+    
+}
+/* End oF Product Size Box------------------------------------------------------------------------- */
+.CreatedImagesection .FinalImageContainer .ProductDetailBox{
+
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.CreatedImagesection .FinalImageContainer .ProductDetailBox .title{
+    margin: 0px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+  
+}
+.CreatedImagesection .FinalImageContainer .ProductDetailBox  p{
+    font-size: 0.8rem;
+    padding: 2px 3px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.692);
+}
+.CreatedImagesection .FinalImageContainer .facilityBox{
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px;
+    background: rgb(231, 238, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility{
+    display: flex;
+    align-items: center;
+    width: 120px;
+   
+    
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility:nth-child(1){
+    border-right: 2px solid #ffffff;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility:nth-child(2){
+    border-right: 2px solid #ffffff;
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility i{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    clip-path: circle();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b9d8a;
+    font-weight: lighter;
+   
+    
+}
+.CreatedImagesection .FinalImageContainer .facilityBox .Facility p{
+    font-size: 0.8rem;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+
+    
+}
+
+/* ------------------END OF PRODUCT INFORMATION SECTION ----------------------------------- */
+

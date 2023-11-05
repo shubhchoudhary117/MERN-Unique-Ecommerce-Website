@@ -1,0 +1,265 @@
+*{
+    padding: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+header nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+   
+
+}
+
+header nav .logo{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+header nav .logo #bars {
+    margin-right: 10px;
+    display: none;
+}
+header nav .logo span{
+    color: #0d9b8a;
+
+}
+
+
+.HomeSectionBody{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+header nav .menus ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav .menus ul li{
+    padding: 12px 28px;
+}
+header nav .menus ul li #link{
+    font-size: 1rem;
+    text-transform:uppercase;
+    text-decoration: none;
+    color: gray;
+}
+header nav .icons{
+    display: flex;
+}
+header nav .icons .profile{
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(51,51,51);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+header nav .icons .profile:hover{
+    border-bottom: 2px solid #0b9d8a;
+}
+header nav .icons .profile .profileIcon i{
+    font-size: 23px;
+    padding: 12px 15px;
+    color: gray;
+}
+header nav .icons .profile .profileIcon  .title{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+header nav .icons .profile .Authentication{
+    position: absolute;
+    left: -75px;
+    width: 200px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid rgb(240, 240, 240);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.2s ease;
+}
+header nav .icons .profile:hover .Authentication{
+    display: block;
+}
+header nav .icons .profile .Authentication .title{
+    font-size: 0.9rem;
+    color: rgb(51,51,51);
+    font-weight: 500;
+}
+header nav .icons .profile .Authentication button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+     color: #ffffff;
+     margin-top: 20px;
+     background-color: #0b9d8a;
+     border-radius: 3px;
+     cursor: pointer;
+}
+header nav .icons .profile .Authentication button .BtnLink{
+    text-decoration: none;
+    color: #ffffff;
+}
+header nav .icons .cart{
+    margin-left: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(51,51,51);
+}
+header nav .icons .cart:hover{
+    border-bottom: 2px solid #0b9d8a;
+}
+header nav .icons .cart #carticon{
+    text-decoration: none;
+    color: gray;
+}
+header nav .icons .cart #carticon i{
+    font-size: 1.5rem;
+    position: relative;
+}
+header nav .icons .cart #carticon i::after{
+    content: attr(data-carts);
+    font-size: 0.6rem;
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right:-5px;
+    clip-path: circle();
+    background-color: #0b9d8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    
+}
+
+
+/* end of navigation bar */
+
+/* Responsive Navigation Media Query ------------------------------------------- */
+
+@media (max-width:768px){
+    header nav {
+        width: 100%;
+    }
+     header nav .logo{
+        font-size: 0.8rem;
+        display: flex;
+     }
+    
+     header nav .logo #bars {
+        margin-right: 10px;
+        display:block;
+    }
+     header nav .icons{
+        margin-right: 0px;
+       
+     }
+     header nav .icons .profile{
+        position: relative;
+        margin-right: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        color: rgb(51,51,51);
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+    header nav .icons .profile:hover{
+        border-bottom: 2px solid #0b9d8a;
+    }
+    header nav .icons .profile .profileIcon i{
+        font-size: 1.5rem;
+        padding: 12px 15px;
+        color: gray;
+    }
+    header nav .icons .profile .profileIcon  .title{
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    header nav .icons .profile .Authentication{
+        position: absolute;
+        left: -75px;
+        width: 200px;
+        height: 150px;
+        background-color: #ffffff;
+        border: 1px solid rgb(240, 240, 240);
+        padding: 10px;
+        z-index: 1000;
+        border-radius: 5px;
+        display: none;
+        transition: all 0.2s ease;
+    }
+    header nav .icons .profile:hover .Authentication{
+        display: block;
+    }
+    header nav .icons .profile .Authentication .title{
+        font-size: 0.9rem;
+        color: rgb(51,51,51);
+        font-weight: 500;
+    }
+    header nav .icons .profile .Authentication button{
+        width: 80px;
+        height: 40px;
+        border: none;
+        font-size: 0.8rem;
+         color: #ffffff;
+         margin-top: 20px;
+         background-color: #0b9d8a;
+         border-radius: 3px;
+         cursor: pointer;
+    }
+    header nav .icons .profile .Authentication button .BtnLink{
+        text-decoration: none;
+        color: #ffffff;
+    }
+     header nav .icons .cart #icon{
+        font-size: 1.5rem;
+        padding: 2px 3px;
+        margin: 2px;
+     }
+     header nav .menus{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        padding: 20px;
+        background-color: #0d9b8a;
+        display: none;
+     }
+     header nav .menus ul{
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        
+     }
+     header nav .menus ul li{
+        padding: 20px 0px;
+     }
+     header nav .menus ul li #link{
+        color: #ffffff;
+        font-size: 0.7rem;
+
+        
+     }
+
+   
+}
+/* End of Responsive Navigation Media Query Section------------------------------ */
+

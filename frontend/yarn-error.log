@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add v1.22.19
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MEGA-X;C:\Program Files\nodejs\;C:\mysql\bin;C:\angular\shubh-akky;C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools;E:\xamp\php;C:\ProgramData\ComposerSetup\bin;C:\User\admin\AppData\Local\android\Sdk;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\admin\Desktop\magicblast-1.5.0\bin;C:\Program Files\NCBI\magicblast-1.5.0\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;Downloads;C:\Program Files (x86);C:\Program Files (x86)\Microsoft Visual Studio 8;C:\Users\admin\AppData\Roaming\npm;C:\mysql\bin;C:\angular\shubh-akky;C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;C:\Users\admin\Desktop\django;C:\Windows\System32\cmd.exe;admin;C:\Users\admin\Desktop\python;C:\Users\admin\AppData\Local\Android\Sdk\platform-tools;C:\User\admin\AppData\Local\android\Sdk;F:\android_studio_files\jre;C:\Program Files\Java\jdk-17.0.2;C:\Users\admin\Desktop\python_practice;C:\Users\admin\Desktop\django;E:\Flask;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.17.6
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ECONNABORTED 104.16.17.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@emotion/react": "^11.10.0",
+      "@emotion/styled": "^11.10.0",
+      "@mui/material": "^5.9.3",
+      "@mui/styled-engine-sc": "^5.9.3",
+      "@reduxjs/toolkit": "^1.8.3",
+      "@testing-library/jest-dom": "^5.16.4",
+      "@testing-library/react": "^13.3.0",
+      "@testing-library/user-event": "^13.5.0",
+      "axios": "^0.27.2",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-redux": "^8.0.2",
+      "react-router-dom": "^6.3.0",
+      "react-scripts": "5.0.1",
+      "styled-components": "^5.3.5",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

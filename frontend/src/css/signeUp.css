@@ -1,0 +1,280 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.signeupHeader{
+    width: 100%;
+    padding: 12px 28px;
+    border: 1px solid rgb(223, 223, 223);
+  
+   
+}
+.signeupHeader h4{
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    text-transform: lowercase;
+}
+.signeupHeader h4 span{
+    color: #0b9d8a;
+    text-transform: capitalize;
+}
+
+/* header Responsive Media query ------------------------------------------- */
+@media(max-width:768px){
+    .signeuptHeader h4{
+        font-size: 1.5rem;
+    }
+}
+/* endo of header styling --------------------------------------------------  */
+
+
+.SigneupBody{
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+
+.container{
+    position: relative;
+    top: 5%;
+    /* max-width: 430px; */
+    width:800px;
+    background-color: #fff;
+    margin: auto;
+  
+}
+.container .signeUpBox{
+    width: 100%;
+    padding: 20px;
+    
+}
+.container .signeUpBox .title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.container .signeUpBox .form-group {
+    width: 100%;
+    margin-top: 30px;
+}
+.container .signeUpBox .form-group #emailErrorMssg{
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    color: #E91111;
+}
+.container  .signeUpBox .form-group .form-field{
+    width: 100%;
+    height: 35px;
+    position: relative;
+    padding: 0px 35px;
+}
+.container .form-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0 8px;
+    border-bottom: 1px solid #ccc;
+}
+.container .form-field input::placeholder{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+.container .form-field input:is(:focus){
+    border-bottom: 1px solid #0b9d8a;
+}
+.container .form-field  i{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%,-50%);
+    font-size: 23px;
+}
+
+.container .form-field input:is(:focus) ~ i{
+    color: #0b9d8a;
+}
+.container .button{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.container .button button {
+    width:100px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #0b9d8a;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transform: scale(0.9);
+    
+}
+.container .button button:hover{
+    transform: scale(1);
+}
+
+.message{
+    width: 100%;
+    text-align: start;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+.message #signeupLink{
+    font-weight: 600;
+    color: #0b9d8a;font-size: 0.9rem;
+    text-transform: capitalize;
+}
+/* error message box */
+
+.error-message{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.error-message .message-title{
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    color: red;
+    font-weight: 500;
+}
+
+/* Responsive Signe up box  Media query ------------------------------------------------------------------------------*/
+
+@media(max-width:768px){
+    
+.SigneupBody{
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+
+.container{
+    /* max-width: 430px; */
+    width:90%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: none;
+    border: 1px solid rgb(223, 223, 223);
+  
+}
+.container .signeUpBOx{
+    width: 100%;
+    padding: 20px;
+    
+}
+.container .signeUpBox .title{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container .signeUpBox  .form-group{
+    width:100% ;
+    margin-top: 30px;
+}
+.SigneupBody .container .signeUpBox  .form-group p{
+    font-size: 0.8rem;
+    padding: 3px 0px;
+    color: #E91111;
+}
+
+.container .signeUpBox  .form-field{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    padding: 0px 35px;
+}
+.container .signeUpBox .form-group .form-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    border-bottom: 1px solid #ccc;
+}
+.container .signeUpBox .form-group .form-field input::placeholder{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+.container .signeUpBox .form-group .form-field input:is(:focus){
+    border-bottom: 1px solid #0b9d8a;
+}
+.container .signeUpBox .form-group .form-field i{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%,-50%);
+    font-size: 23px;
+}
+
+.container .signeUpBox .form-group .form-field input:is(:focus) ~ i{
+    color: #0b9d8a;
+}
+.container .signeUpBox .form-group .form-field  #fieldsEmptyerrorActive i{
+    color: red;
+    font-size: 40px;
+}
+.container .button{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.container .button button {
+    width:100px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #0b9d8a;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transform: scale(0.9);
+    
+}
+.container .button button:hover{
+    transform: scale(1);
+}
+
+.message{
+    width: 100%;
+    text-align: start;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+.message #signeupLink{
+    font-weight: 600;
+    color: #0b9d8a;font-size: 0.9rem;
+    text-transform: capitalize;
+}
+/* error message box */
+
+.error-message{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.error-message .message-title{
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    color: red;
+    font-weight: 500;
+}
+
+}

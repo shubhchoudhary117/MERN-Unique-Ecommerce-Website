@@ -1,0 +1,390 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.PaymentHeader{
+    width: 100%;
+    padding: 12px 28px;
+    border: 1px solid rgb(223, 223, 223);
+   
+}
+.PaymentHeader h3{
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    text-transform: lowercase;
+}
+.PaymentHeader h3 span{
+    color: #0b9d8a;
+    text-transform: capitalize;
+}
+
+/* header Responsive Media query ------------------------------------------- */
+@media(max-width:768px){
+    .PaymentHeader h3{
+        font-size: 1.5rem;
+    }
+}
+/* endo of header styling --------------------------------------------------  */
+
+main{
+    width: 100%;
+}
+main .PaymentSection{
+    width: 100%;
+    margin-top: 20px;
+}
+main .PaymentSection .PaymentContainer{
+    width: 80%;
+    margin: auto;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox{
+    width: 560px;
+    padding: 10px;
+   
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox h4{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox .paymentMethods  .CashOnDilavery{
+    padding: 20px 28px;
+    border-radius: 4px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: hsl(162, 60%, 89%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox .paymentMethods  .CashOnDilavery .logo {
+    display: flex;
+    align-items: center;
+
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox .paymentMethods  .CashOnDilavery .logo h3{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: rgb(51, 51, 51);
+    margin-top: 5px;
+}
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox .paymentMethods  .CashOnDilavery .logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    margin-right: 20px;
+    
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox  .paymentMethods .CashOnDilavery .text{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    
+}
+
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox
+  .paymentMethods .CashOnDilavery .mark  .uil-check{
+    width: 20px;
+    height: 20px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    clip-path: circle();
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .PaymentBox
+  .paymentMethods .CashOnDilavery .mark  .uil-circle{
+    width: 23px;
+    height: 23px;
+    color: #0b9d8a;
+    clip-path: circle();
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+    
+/* ----------------------- MEDIA QUERY OF CART BOXES -------------------------------------- */
+
+/* start the product price detail box----------------------------------- */
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox{
+    width: 400px;
+    padding: 20px;
+    border-left: 1px solid rgb(223, 223, 223);
+    border-right:  1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin-left: -50px;
+    
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail {
+    width: 100%;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: #0b9d8a;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 223, 223);
+   
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice h5{
+    text-transform: capitalize;
+    padding: 12px 0px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 450;
+    color: rgb(51, 51, 51);
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice  strong{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .orderTotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .orderTotal .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+ 
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox   .orderTotal  strong{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+/* end of total order box -------------------------- */
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox  .ProductPriceBox  .buttonBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .buttonBox button{
+    width: 90%;
+    height: 50px;
+    background-color: #0b9d8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .buttonBox button #link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+   
+ 
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox .saftycontent {
+    width: 60%;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox .saftycontent  h3{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0b9d8a;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox .saftycontent p{
+    font-size: 0.8rem;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+ 
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage img{
+    width: 100%;
+    height: 100%;object-fit: fill;
+}
+/* end of price detail box */
+
+
+/* Product Price Detail box Responsive Media Query ---------------------------------------------------------- */
+
+@media(max-width:768px){
+
+
+    main{
+        width: 100%;
+    }
+    main .PaymentSection{
+        width: 100%;
+        margin-top: 20px;
+    }
+    main .PaymentSection .PaymentContainer{
+        width: 100%;
+        margin: auto;
+    }
+
+/* start the product price detail box----------------------------------- */
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox{
+    width: 100%;
+    padding: 20px;
+    border-left: 1px solid rgb(223, 223, 223);
+    border-right:  1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin: auto;
+    margin-top: 30px;
+    
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail {
+    width: 100%;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: #0b9d8a;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 223, 223);
+   
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice h5{
+    text-transform: capitalize;
+    padding: 12px 0px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 450;
+    color: rgb(51, 51, 51);
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .priceDetail .totalPrice  strong{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .orderTotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .orderTotal .title{
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+ 
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox   .orderTotal  strong{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+/* end of total order box -------------------------- */
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox  .ProductPriceBox  .buttonBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .buttonBox button{
+    width: 90%;
+    height: 40px;
+    background-color: #0b9d8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox  .buttonBox button #link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+   
+ 
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox .saftycontent {
+    width: 60%;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox .saftycontent  h3{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0b9d8a;
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox .saftycontent .text{
+    font-size: 0.4rem;
+    
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+ 
+}
+main .PaymentSection .PaymentContainer .PaymentBoxPriceBox .ProductPriceBox .saftyBox  .saftyimage img{
+    width: 100%;
+    height: 100%;object-fit: fill;
+}
+/* end of price detail box */
+
+
+
+
+}
+/* End of Price Detail Box Responsive Media Query ----------------------------------------------------------- */

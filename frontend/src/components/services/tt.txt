@@ -1,0 +1,12 @@
+
+
+
+  <div className="aboutContent">
+                        <h2 className="title">Logo printing shoping webiste</h2>
+                        <p className="text">
+                            On this shopping side, you can order any T-shirt
+                            you like by printing any logo, image on it.
+                            Whatever the logo image will be, you yourself will import
+                            which logo or image you want to print on the picture.
+                        </p>
+                    </div>

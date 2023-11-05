@@ -1,0 +1,339 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    
+}
+
+.AddressBoxHeader{
+    width: 100%;
+    padding: 12px 28px;
+    border: 1px solid rgb(223, 223, 223);
+    background-color: #fff;
+    z-index: 111;
+   
+}
+.AddressBoxHeader h3{
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    text-transform: lowercase;
+}
+.AddressBoxHeader h3 span{
+    color: #0b9d8a;
+    text-transform: capitalize;
+}
+
+/* header Responsive Media query ------------------------------------------- */
+@media(max-width:768px){
+    .AddressBoxHeader h3{
+        font-size: 1.5rem;
+    }
+}
+/* endo of header styling --------------------------------------------------  */
+
+main{
+    width: 100%;
+}
+main .AddressSection{
+    width: 100%;
+}
+main .AddressContainer{
+    width: 80%;
+    margin: auto;
+}
+main .AddressBox{
+    width: 550px;
+    margin-top: 50px;
+    padding: 0px;
+}
+main .AddressBox .options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+main .AddressBox .options .left{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 24px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+main .AddressBox .options .right{
+    color: #0b9d8a;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 20px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .AddressBox .options .right .editButton{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #0b9d8a;
+    margin-top: 5px;
+    
+}
+main .AddressBox .options .right{
+    font-weight: 500;
+}
+main .AddressBox .AddressCard{
+    width: 100%;
+    background: rgb(231, 238, 255);
+    margin: auto;
+    word-break: break-word;
+    background: rgb(231, 238, 255);
+    border: 1px solid rgb(240, 240, 240);
+    margin-bottom: 8px;
+    padding: 20px 16px;
+    cursor: pointer;
+}
+main .AddressBox .AddressCard .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+main .AddressBox .AddressCard .header .UserName{
+    letter-spacing: 1px;
+    color: rgb(51, 51, 51);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+main .AddressBox .AddressCard .header .RadioButton .point{
+    width: 20px;
+    height: 20px;
+    background-color: #0b9d8a;
+    clip-path: circle();
+   
+}
+
+main .AddressBox .AddressCard .details{
+    margin-top: 20px;
+    
+}
+main .AddressBox .AddressCard .details p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    text-transform: capitalize;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+main .AddressBox .AddressCard #continueButton{
+    width: 450px;
+    height: 40px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: auto;
+    margin: 20px;
+   
+}
+/* end of addressbox styling */
+/* start the address editing form styling */
+main .AddressSection .EditingBox {
+    width: 40%;
+    position: absolute;
+    top: 0%;
+    right: -40%;
+    margin-top: 10px;
+    transition:all 0.5s ease;
+    z-index: 1111;
+    background-color: #fff;
+    
+}
+main .AddressSection #activeUpdateForm{
+    right: 0px;
+    z-index: 1111;
+}
+main .AddressSection #noneactiveUpdateForm{
+    right: -40%;
+}
+
+main .AddressSection .EditingBox  .FormContainer {
+    width: 100%;
+}
+main .AddressSection .EditingBox  .FormContainer .form{
+    width: 100%;
+}
+main .AddressSection .EditingBox .FormContainer .form .closeForm i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+main .AddressSection  .EditingBox  .FormContainer .form .addressDetail .citystate{
+    margin-top: 0px;
+}
+
+/* Responsive code of Addressbox ---------------------Media Query ---------------------------------------- */
+@media(max-width:768px){
+main{
+    width: 100%;
+}
+main .AddressSection{
+    width: 100%;
+}
+main .AddressContainer{
+    width: 100%;
+}
+main .AddressBox{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+}
+main .AddressBox .options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+main .AddressBox .options .left{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+/* main .AddressBox .options .right .editButton{
+    color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 20px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+} */
+
+main .AddressBox .options .right .editButton{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #0b9d8a;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+
+main .AddressBox .AddressCard{
+    width: 100%;
+    background: rgb(231, 238, 255);
+    margin: auto;
+    word-break: break-word;
+    background: rgb(231, 238, 255);
+    border: 1px solid rgb(240, 240, 240);
+    margin-bottom: 8px;
+    padding: 20px 16px;
+    cursor: pointer;
+    z-index: 111;
+}
+main .AddressBox .AddressCard .header .UserName{
+    letter-spacing: 1px;
+    color: rgb(51, 51, 51);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+main .AddressBox .AddressCard .header .RadioButton .point{
+    width: 10px;
+    height: 10px;
+    background-color: #0b9d8a;
+    clip-path: circle();
+   
+}
+
+main .AddressBox .AddressCard .details{
+    margin-top: 20px;
+    
+}
+main .AddressBox .AddressCard .details p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    text-transform: capitalize;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+main .AddressBox .AddressCard .button{
+    width: 100%;
+    margin-top: 20px;
+}
+main .AddressBox .AddressCard #continueButton{
+    width: 80%;
+    height: 30px;
+    background-color: #0b9d8a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin: auto;
+   
+}
+/* end of addressbox styling */
+/* start the address editing form styling */
+
+main .AddressSection .EditingBox {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    margin-top: 10px;
+    transition:all 0.5s ease;
+    background-color: #ffffff;
+    
+}
+main .AddressSection #activeUpdateForm{
+    left: 0px;
+}
+main .AddressSection #noneactiveUpdateForm{
+    left: -100%;
+}
+main .AddressSection .EditingBox  .FormContainer {
+    width: 100%;
+}
+main .AddressSection .EditingBox  .FormContainer .form{
+    width: 100%;
+}
+main .AddressSection .EditingBox .FormContainer .form .closeForm i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+main .AddressSection  .EditingBox  .FormContainer .form .addressDetail .citystate{
+    margin-top: 0px;
+}
+}
+/* End of Responsive code of Addressbox ---------------------Media Query --------------------------------- */
